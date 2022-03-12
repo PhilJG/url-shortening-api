@@ -4,7 +4,7 @@
   "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/syle.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/PhilJG/url-shortening-api#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }

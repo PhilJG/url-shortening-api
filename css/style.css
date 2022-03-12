@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif; }
+
+nav ul {
+  list-style: none; }
+nav a {
+  text-decoration: none; }
+
+p {
+  color: #bfbfbf; }
+
+button {
+  background-color: #2acfcf;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none; }
+
+.section {
+  padding: 2rem; }
+
+footer {
+  background-color: #35323e; }
+
+#hidden {
+  display: none; }
+
+/* Hero Section */
+.hero__img--mobile {
+  width: 160%; }
+
+/*# sourceMappingURL=style.css.map */

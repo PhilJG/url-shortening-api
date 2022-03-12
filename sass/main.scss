@@ -17,8 +17,40 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav,
-section {
+nav {
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+p {
+  color: $gray;
+}
+
+button {
+  background-color: $cyan;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.section {
   padding: 2rem;
-  border: $dark-violet;
+}
+
+footer {
+  background-color: $very-dark-blue;
+}
+
+#hidden {
+  display: none;
+}
+
+/* Hero Section */
+.hero__img--mobile {
+  width: 160%;
 }
