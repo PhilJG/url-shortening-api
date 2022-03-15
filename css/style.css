@@ -6,10 +6,15 @@ body {
   font-size: 18px;
   font-family: "Poppins", sans-serif; }
 
-nav ul {
-  list-style: none; }
-nav a {
-  text-decoration: none; }
+nav,
+footer {
+  padding-top: 2.5rem; }
+  nav ul,
+  footer ul {
+    list-style: none; }
+  nav a,
+  footer a {
+    text-decoration: none; }
 
 p {
   color: #bfbfbf; }
@@ -17,15 +22,47 @@ p {
 button {
   background-color: #2acfcf;
   color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 10px;
-  border: none; }
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold; }
 
 .section {
-  padding: 2rem; }
+  padding-inline: 2rem; }
+
+h1,
+h2,
+h3,
+p {
+  text-align: center; }
+
+.shorten__input {
+  background-image: url(/images/bg-boost-mobile.svg); }
+  .shorten__input .shorten__input--form {
+    display: flex;
+    flex-direction: column; }
+
+.feature {
+  display: flex;
+  flex-direction: column; }
+  .feature .feature__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .feature .feature__card .feature__card--img {
+      background-color: #35323e;
+      padding: 1.5rem;
+      border-radius: 60px; }
 
 footer {
   background-color: #35323e; }
+  footer .footer__list--item {
+    list-style: none; }
+  footer a {
+    text-decoration: none;
+    color: #bfbfbf; }
+  footer .footer__list--header {
+    color: #bfbfbf; }
 
 #hidden {
   display: none; }

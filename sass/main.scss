@@ -1,12 +1,4 @@
-$cyan: hsl(180, 66%, 49%);
-$dark-violet: hsl(257, 27%, 26%);
-$red: hsl(0, 87%, 67%);
-
-$gray: hsl(0, 0%, 75%);
-$grayish-violet: hsl(257, 7%, 63%);
-$very-dark-blue: hsl(255, 11%, 22%);
-$very-dark-violet: hsl(260, 8%, 14%);
-
+@import "variables";
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +9,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-nav {
+nav,
+footer {
+  padding-top: 2.5rem;
   ul {
     list-style: none;
   }
@@ -31,19 +25,62 @@ p {
 }
 
 button {
-  background-color: $cyan;
+  background-color: #2acfcf;
   color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
   border: none;
+  font-weight: bold;
 }
 
 .section {
-  padding: 2rem;
+  padding-inline: 2rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+.shorten__input {
+  background-image: url(/images/bg-boost-mobile.svg);
+  .shorten__input--form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+
+  .feature__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .feature__card--img {
+      background-color: $very-dark-blue;
+      padding: 1.5rem;
+      border-radius: 60px;
+    }
+  }
 }
 
 footer {
   background-color: $very-dark-blue;
+  .footer__list--item {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: $gray;
+  }
+
+  .footer__list--header {
+    color: $gray;
+  }
 }
 
 #hidden {

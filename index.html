@@ -66,7 +66,7 @@
       </div>
 
       <div class="shorten__input section">
-        <form action="">
+        <form action="" class="shorten__input--form">
           <label for="url shortening input"></label>
           <input
             type="text"
@@ -75,20 +75,23 @@
           />
           <button class="shorten__input--btn">Shorten It!</button>
         </form>
-        <div class="shorten__output">
-          <div id="url"></div>
-          <div class="shorten__output--link"></div>
-          <button class="copy"></button>
         </div>
-        <div class="shorten__output">
-          <div id="url"></div>
-          <div class="shorten__output--link"></div>
-          <button class="copy"></button>
-        </div>
-        <div class="shorten__output">
-          <div id="url"></div>
-          <div class="shorten__output--link"></div>
-          <button class="copy"></button>
+        <div id="hidden" class="shorten__output">
+          <div class="shorten__output--card">
+            <div id="url"></div>
+            <div class="shorten__output--link"></div>
+            <button class="copy"></button>
+          </div>
+          <div class="shorten__output--card">
+            <div id="url"></div>
+            <div class="shorten__output--link"></div>
+            <button class="copy"></button>
+          </div>
+          <div class="shorten__output--card">
+            <div id="url"></div>
+            <div class="shorten__output--link"></div>
+            <button class="copy"></button>
+          </div>
         </div>
       </div>
 
@@ -99,7 +102,9 @@
           statistics dashboard.
         </p>
         <div class="feature__card">
-          <img src="./images/icon-brand-recognition.svg" alt="" />
+          <div class="feature__card--img">
+            <img src="./images/icon-brand-recognition.svg" alt="" />
+          </div>
           <h3>Brand Recognition</h3>
           <p>
             Boost your brand recognition with each click. Generic links don’t
@@ -107,7 +112,9 @@
           </p>
         </div>
         <div class="feature__card">
-          <img src="./images/icon-detailed-records.svg" alt="" />
+          <div class="feature__card--img">
+            <img src="./images/icon-detailed-records.svg" alt="" />
+          </div>
           <h3>Detailed Records</h3>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -115,7 +122,9 @@
           </p>
         </div>
         <div class="feature__card">
-          <img src="./images/icon-fully-customizable.svg" alt="" />
+          <div class="feature__card--img">
+            <img src="./images/icon-fully-customizable.svg" alt="" />
+          </div>
           <h3>Fully Customizable</h3>
           <p>
             Improve brand awareness and content discoverability through
@@ -126,32 +135,32 @@
 
       <div class="signup section">
         <h1>Boost your links today</h1>
-        <a href="#">Get Started</a>
+        <button href="#">Get Started</button>
       </div>
     </main>
     <footer class="section">
       <img src="./images/logo.svg" alt="" />
-      <ul>
-        <h4>Features</h4>
+      <ul class="footer__list">
+        <h4 class="footer__list--header">Features</h4>
         <li><a href="">Link Shortening</a></li>
-        <li><a href="">Branded</a></li>
-        <li><a href="">Links </a></li>
-        <li><a href="">Analytics</a></li>
+        <li><a href="#" class="footer__list--item">Branded</a></li>
+        <li><a href="#" class="footer__list--item">Links </a></li>
+        <li><a href="#" class="footer__list--item">Analytics</a></li>
       </ul>
-      <ul>
-        <h4>Resources</h4>
-        <li><a href="">Blog</a></li>
-        <li><a href=""> Developers </a></li>
-        <li><a href="">Support </a></li>
+      <ul class="footer__list">
+        <h4 class="footer__list--header">Resources</h4>
+        <li><a href="#" class="footer__list--item">Blog</a></li>
+        <li><a href="#" class="footer__list--item"> Developers </a></li>
+        <li><a href="#" class="footer__list--item">Support </a></li>
       </ul>
-      <ul>
-        <h4>Company</h4>
-        <li><a href="">About </a></li>
-        <li><a href="">Our Team </a></li>
-        <li><a href="">Careers </a></li>
-        <li><a href="">Contact</a></li>
+      <ul class="footer__list">
+        <h4 class="footer__list--header">Company</h4>
+        <li><a href="#" class="footer__list--item">About </a></li>
+        <li><a href="#" class="footer__list--item">Our Team </a></li>
+        <li><a href="#" class="footer__list--item">Careers </a></li>
+        <li><a href="#" class="footer__list--item">Contact</a></li>
       </ul>
-      <ul>
+      <ul class="footer__list">
         <li>
           <a href=""><img src="./images/icon-facebook.svg" alt="" /></a>
         </li>
