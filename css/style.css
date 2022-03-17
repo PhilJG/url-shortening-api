@@ -4,7 +4,8 @@
 
 body {
   font-size: 18px;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  background-color: #bfbfbf; }
 
 nav,
 footer {
@@ -19,13 +20,18 @@ footer {
 p {
   color: #bfbfbf; }
 
+nav,
+.hero {
+  background-color: white; }
+
 button {
   background-color: #2acfcf;
   color: white;
   padding: 0.75rem 2rem;
   border-radius: 30px;
   border: none;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 .section {
   padding-inline: 2rem; }
@@ -37,10 +43,34 @@ p {
   text-align: center; }
 
 .shorten__input {
-  background-image: url(/images/bg-boost-mobile.svg); }
+  background-image: url(/images/bg-shorten-mobile.svg);
+  background-color: #3b3054;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  border-radius: 5px;
+  background-size: cover; }
   .shorten__input .shorten__input--form {
     display: flex;
     flex-direction: column; }
+  .shorten__input .shorten__input--field {
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem; }
+
+.shorten__output {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px; }
+  .shorten__output .shorten__output--short {
+    color: #2acfcf; }
 
 .feature {
   display: flex;
@@ -64,7 +94,7 @@ footer {
   footer .footer__list--header {
     color: #bfbfbf; }
 
-#hidden {
+.hidden {
   display: none; }
 
 /* Hero Section */

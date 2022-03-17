@@ -7,6 +7,7 @@
 body {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
+  background-color: $gray;
 }
 
 nav,
@@ -24,6 +25,11 @@ p {
   color: $gray;
 }
 
+nav,
+.hero {
+  background-color: white;
+}
+
 button {
   background-color: #2acfcf;
   color: white;
@@ -31,6 +37,7 @@ button {
   border-radius: 30px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .section {
@@ -45,10 +52,39 @@ p {
 }
 
 .shorten__input {
-  background-image: url(/images/bg-boost-mobile.svg);
+  background-image: url(/images/bg-shorten-mobile.svg);
+  background-color: $dark-violet;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  border-radius: 5px;
+  background-size: cover;
+
   .shorten__input--form {
     display: flex;
     flex-direction: column;
+  }
+  .shorten__input--field {
+    padding: 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+  }
+}
+
+.shorten__output {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+
+  .shorten__output--short {
+    color: $cyan;
   }
 }
 
@@ -83,7 +119,7 @@ footer {
   }
 }
 
-#hidden {
+.hidden {
   display: none;
 }
 

@@ -1,15 +1,38 @@
 "use strict";
 
+const inputSection = document.querySelector(".shorten__input");
 const inputField = document.querySelector(".shorten__input--field");
 const shortenBtn = document.querySelector(".shorten__input--btn");
 
-const inputValue = inputField.value;
+const shortenOutput = document.querySelector(".shorten__output");
 
-const shortenURL = function () {
-  fetch(`https://api.shrtco.de/v2/shorten?url=example.org/very/long/link.html`)
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.error(`This is your problem... ${err}`));
+let inputValue = inputField.value;
+
+console.log(inputSection);
+
+const renderLink = function (fullLink, shortLink) {
+  const html = `<div class="shorten__output">
+        <div class="shorten__output--card">
+          <div class="shorten__output--orignal">${fullLink}</div>
+          <hr>
+          <div class="shorten__output--short">${shortLink}</div>
+          <button class="copy">Copy</button>
+        </div>
+      </div>`;
+  console.log(html);
+  inputSection.insertAdjacentHTML("afterend", html);
 };
 
-shortenBtn.addEventListener("click", shortenURL);
+const shortenURL = function (input) {
+  fetch(`https://api.shrtco.de/v2/shorten?url=${input}/very/long/link.html`)
+    .then((res) => res.json())
+    .then(function (data) {
+      renderLink(`${inputField.value}`, `${data.result.full_short_link}`);
+      console.log(data);
+    })
+    .catch((err) => console.error(`This is your problem... ${err}`));
+
+  console.log(inputField.value);
+};
+
+shortenBtn.addEventListener("click", shortenURL(`${inputValue}`));
