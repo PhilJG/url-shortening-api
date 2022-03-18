@@ -2,7 +2,8 @@
 
 const inputSection = document.querySelector(".shorten__input");
 const inputField = document.querySelector(".shorten__input--field");
-const shortenBtn = document.querySelector(".shorten__input--btn");
+const shortenBtn = document.querySelector(".btn__shorten");
+const copyBtn = document.querySelector(".btn__shorten--copy");
 
 const shortenOutput = document.querySelector(".shorten__output");
 
@@ -16,7 +17,7 @@ const renderLink = function (fullLink, shortLink) {
           <div class="shorten__output--orignal">${fullLink}</div>
           <hr>
           <div class="shorten__output--short">${shortLink}</div>
-          <button class="copy">Copy</button>
+          <button class="copy btn__shorten btn__shorten--copy">Copy</button>
         </div>
       </div>`;
   console.log(html);
@@ -35,4 +36,9 @@ const shortenURL = function (input) {
   console.log(inputField.value);
 };
 
-shortenBtn.addEventListener("click", shortenURL(`${inputValue}`));
+shortenBtn.addEventListener("click", () => shortenURL(`${inputValue}`));
+
+copyBtn.addEventListener("click", function () {
+  const copyResult = copyBtn.previousSibling;
+  console.log(copyResult);
+});

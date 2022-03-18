@@ -1,0 +1,25 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+
+  .feature__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 2.5rem 0;
+    border-radius: 5px;
+    .feature__card--img {
+      background-color: $very-dark-blue;
+      padding: 1.5rem;
+      border-radius: 60px;
+      transform: translateY(-50px);
+    }
+    .feature__card--text {
+      padding: 1rem 2rem 2.5rem 2rem;
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,8 @@
 @import "variables";
+@import "buttons";
+@import "feature";
+@import "breakpoints";
+
 * {
   margin: 0;
   padding: 0;
@@ -30,18 +34,16 @@ nav,
   background-color: white;
 }
 
-button {
-  background-color: #2acfcf;
-  color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
+.section {
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.section {
-  padding-inline: 2rem;
+nav.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 h1,
@@ -49,6 +51,18 @@ h2,
 h3,
 p {
   text-align: center;
+}
+
+.hero {
+  padding: 0;
+}
+.hero__img {
+  overflow: hidden;
+}
+
+.hero__txt {
+  display: flex;
+  flex-direction: column;
 }
 
 .shorten__input {
@@ -88,24 +102,16 @@ p {
   }
 }
 
-.feature {
-  display: flex;
-  flex-direction: column;
-
-  .feature__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .feature__card--img {
-      background-color: $very-dark-blue;
-      padding: 1.5rem;
-      border-radius: 60px;
-    }
-  }
+.signup {
+  background-image: url(/images/bg-boost-mobile.svg);
+  background-color: $dark-violet;
 }
 
 footer {
   background-color: $very-dark-blue;
+  ul {
+    text-align: center;
+  }
   .footer__list--item {
     list-style: none;
   }
@@ -116,6 +122,9 @@ footer {
 
   .footer__list--header {
     color: $gray;
+  }
+  .footer__list--social {
+    display: flex;
   }
 }
 
