@@ -1,0 +1,13 @@
+.shorten__output {
+  background-color: white;
+  @include flex-column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+
+  .shorten__output--short {
+    color: $cyan;
+  }
+}

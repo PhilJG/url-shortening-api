@@ -1,0 +1,21 @@
+@include breakpoint(mobile) {
+}
+
+@include breakpoint(desktop) {
+}
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: $gray;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}

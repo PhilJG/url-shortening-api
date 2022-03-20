@@ -1,0 +1,9 @@
+nav {
+  @include flex-row;
+  @include section-mobile-padding;
+  background-color: white;
+  justify-content: space-between;
+  .nav__list {
+    display: none;
+  }
+}

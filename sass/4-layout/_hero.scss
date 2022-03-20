@@ -1,0 +1,25 @@
+.hero {
+  background-color: white;
+  padding: 0;
+  .hero__img {
+    overflow: hidden;
+    /* Hero Section */
+    .hero__img--mobile {
+      width: 160%;
+    }
+    .hero__txt {
+      @include flex-column;
+      @include section-mobile-padding;
+      h1,
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+@include breakpoint(desktop) {
+  h1,
+  p {
+    text-align: left;
+  }
+}

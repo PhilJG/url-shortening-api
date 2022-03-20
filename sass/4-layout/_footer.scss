@@ -1,0 +1,15 @@
+footer {
+  background-color: $very-dark-blue;
+  ul {
+    text-align: center;
+  }
+  .footer__list--item {
+    a {
+      color: $gray;
+    }
+
+    .footer__list--social {
+      @include flex-row;
+    }
+  }
+}
