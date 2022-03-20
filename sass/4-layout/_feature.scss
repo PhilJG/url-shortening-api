@@ -1,10 +1,10 @@
 .feature {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  @include section-mobile-padding;
+  text-align: center;
 
   .feature__card {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     background-color: white;
     margin: 2.5rem 0;

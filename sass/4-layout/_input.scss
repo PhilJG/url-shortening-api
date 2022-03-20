@@ -1,41 +1,30 @@
 .shorten__input {
-  background-image: url(/images/bg-shorten-mobile.svg);
-  background-color: $dark-violet;
-  padding: 1rem;
-  background-repeat: no-repeat;
-  margin: 1rem;
-  border-radius: 5px;
-  background-size: cover;
+  @include section-mobile-padding;
 
   .shorten__input--form {
-    @include flex-row;
-  }
-  .shorten__input--field {
-    padding: 1rem;
+    background-image: url(/images/bg-shorten-mobile.svg);
+    background-color: $dark-violet;
+    background-repeat: no-repeat;
     border-radius: 5px;
-    outline: none;
-    border: none;
-    margin-bottom: 1rem;
-  }
-}
-
-.shorten__input {
-  @include section-desktop-padding;
-
-  .shorten__input--form {
-    display: flex;
-    flex-direction: row;
-
+    background-size: cover;
+    @include flex-column;
+    @include section-mobile-padding;
     .shorten__input--field {
       padding: 1rem;
       border-radius: 5px;
       outline: none;
       border: none;
-      margin-right: 1rem;
-      width: 100%;
-    }
-    .btn__shorten {
-      width: auto;
+      margin-bottom: 1rem;
+      .shorten__input--field {
+        padding: 1rem;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-right: 1rem;
+      }
+      .btn__shorten {
+        width: auto;
+      }
     }
   }
 }

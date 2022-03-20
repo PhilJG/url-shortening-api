@@ -1,15 +1,15 @@
-@include breakpoint(mobile) {
-}
-
-@include breakpoint(desktop) {
-}
 body {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 2.75rem;
+}
+
 p {
   color: $gray;
+  line-height: 1.75rem;
 }
 
 ul {

@@ -3,23 +3,18 @@
   padding: 0;
   .hero__img {
     overflow: hidden;
-    /* Hero Section */
+    transform: translateX(30px);
+
     .hero__img--mobile {
-      width: 160%;
-    }
-    .hero__txt {
-      @include flex-column;
-      @include section-mobile-padding;
-      h1,
-      p {
-        text-align: center;
-      }
+      width: 130%;
     }
   }
 }
-@include breakpoint(desktop) {
+.hero__txt {
+  @include flex-column;
+  @include section-mobile-padding;
   h1,
   p {
-    text-align: left;
+    text-align: center;
   }
 }
