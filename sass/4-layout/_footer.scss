@@ -1,15 +1,24 @@
 footer {
   background-color: $very-dark-blue;
+  .logo__white {
+    fill: white;
+  }
   ul {
     text-align: center;
-  }
-  .footer__list--item {
-    a {
-      color: $gray;
+    color: white;
+
+    .footer__list--item {
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
 
     .footer__list--social {
-      @include flex-row;
+      ul {
+        display: flex;
+        flex-direction: row;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
   @include flex-column;
   @include section-mobile-padding;
   text-align: center;
+  background-color: $light-grey;
 
   .feature__card {
     @include flex-column;
@@ -18,7 +19,7 @@
     .feature__card--text {
       padding: 1rem 2rem 2.5rem 2rem;
       p {
-        font-size: 0.8rem;
+        color: grey;
       }
     }
   }

@@ -1,4 +1,11 @@
 .signup {
   background-image: url(/images/bg-boost-mobile.svg);
   background-color: $dark-violet;
+  .section {
+    padding: 6rem 1.5rem;
+    h1 {
+      color: white;
+      font-size: 1.75rem;
+    }
+  }
 }

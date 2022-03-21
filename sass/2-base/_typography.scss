@@ -8,14 +8,21 @@ h1 {
 }
 
 p {
-  color: $gray;
+  color: $grey;
   line-height: 1.75rem;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .hidden {
   display: none;
+}
+
+.section {
+  @include section-mobile-padding;
+  @include flex-column;
+  text-align: center;
 }
